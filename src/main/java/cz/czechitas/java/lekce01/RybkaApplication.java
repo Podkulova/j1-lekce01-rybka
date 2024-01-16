@@ -35,18 +35,20 @@ public class RybkaApplication extends CzechitasGameApplication {
     kamen = new Kamen(200, 200);
     rybka = new Rybka(100, 100);
 
-    for (int i = 0; i < 18; i++) {
+
+    int pocetKroku = 16;
+    for (int i = 0; i < pocetKroku; i++) {
       rybka.plavatVpravo();
     }
 
-    for (int i = 0; i < 16; i++) {
+    for (int i = 0; i < pocetKroku; i++) {
       rybka.plavatDolu();
     }
 
-    for (int i = 0; i < 16; i++) {
+    for (int i = 0; i < pocetKroku; i++) {
       rybka.plavatVlevo();
     }
-    for (int i = 0; i < 16; i++) {
+    for (int i = 0; i < pocetKroku; i++) {
       rybka.plavatNahoru();
     }
 
